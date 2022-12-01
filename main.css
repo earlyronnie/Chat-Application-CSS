@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Economica&display=swap');
+
+:root {
+    --gradient: (hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* general */
+
+body {
+    font-family: 'Rubik', sans-serif;
+}
+
+.background-paint {
+    position: absolute;
+    background-image: linear-gradient(150deg, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    width: 35em;
+    height: 35em;
+    border-radius: 0 0 50% 50%;
+    transform: translate(-65%, -8%);
+    z-index: -999;
+}
+
+
+
+
+main {
+        margin: 2em 2.5em 2em 2.5em;
+}
+
+
+/*<---PHONE SECTION--->*/
+.iPhone {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    margin-inline: auto;
+}
+
+.Outer {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 34.75em;
+    width: 16.65625em;
+    background-color: white;
+    border-radius: 35px;
+    -webkit-box-shadow: 0px 10px 41px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 10px 41px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 10px 41px 0px rgba(0,0,0,0.25);
+    border: none;
+}
+
+.notch {
+    position: absolute;
+    background-color: white;
+    height:1.25em;
+    width: 7.328125em;
+    border-radius: 0 0 13px 13px;
+    margin-top: -32.5em;
+    z-index: 3;
+    border: none;
+}
+
+.res {
+    height: 33.445em;
+    width: 15.324375em;
+    background-color: hsl(270, 20%, 96%);
+    border-radius: 25px;
+}
+
+
+/*<---FREIND INFO SECTION--->*/
+.friend-info {
+    height: 4.5em;
+    width: 15.324375em;
+    background-image: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius: 25px 25px 5px 5px;
+    -webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.05);
+}
+
+
+.friend-info a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+.samuel {
+    display: flex;
+    justify-content: left;
+}
+.sam-details {
+    display: flex;
+    text-align: left;
+    color: white;
+    width: 14em;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+.back {
+    position: absolute;
+    transform:translate(.3em, .05em);
+    font-family: 'Economica', sans-serif;   
+    font-size: 1.5rem;
+}
+
+.menu {
+    position: absolute;
+    transform:translate(13.5em, .55em);
+}
+
+.avatar {
+    width: 1.75em;
+    border-radius: 50%;
+    border: 1px solid #0FFF50;
+    cursor: pointer;
+    margin: 0 0em 0 0em;
+    transform: translate(1.5em, .45em);
+}
+
+.avatar:hover {
+
+}
+
+.name-status {
+    transform: translateX(2em);
+}
+
+.sam-name {
+    font-size: .75rem;
+    font-weight: 500;
+    opacity: .9;
+}
+
+.status {
+    font-size: .55rem;
+    opacity: .5;
+}
+
+.menu {
+    margin-right: 1px;
+}
+
+
+/*<---MESSAGE SECTION--->*/
+.message {
+    height: 28em;
+    width: 13.8em;;
+    margin: 1em .75em 0 .75em;
+}
+
+.sam-content {
+    margin-bottom: 1.5em;
+}
+.sam-chat {
+    font-size: 0.5rem;
+    margin-bottom: 1em;
+    background-color: #eee4f4;
+    color: hsl(276, 55%, 52%);
+    max-width: 65%; 
+    padding: .9em;
+    border-radius: 13px 13px 13px 5px;
+}
+
+.my-content {
+    margin-bottom: 1.5em;
+    float: right;
+    width: 130px;
+    
+}
+
+.my-img-chat img {
+    display: inline-block;
+    width: 2.5em;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.05);
+}
+
+
+.my-chat {
+    font-size: 0.5rem;
+    margin-bottom: 1em;
+    background-color: white;
+    color: hsl(271, 15%, 43%);
+    max-width: 100%;
+    padding: .9em;
+    border-radius: 13px 13px 5px 13px;  
+    -webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.05);
+}
+
+.my-chat-3 {
+    font-size: 0.5rem;
+    margin-bottom: 1em;
+    background-color: white;
+    color: hsl(271, 15%, 43%);
+    max-width: max-content;
+    padding: .85em;
+    border-radius: 13px 13px 5px 13px; 
+    float: right;
+    -webkit-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 7px 5px 0px rgba(0,0,0,0.05);
+}
+
+.bot-sam-content {
+    margin-bottom: 1em;   
+}
+.bot-sam-chat {
+    font-size: 0.5rem;
+    margin-bottom: 1em;
+    background-color: #eee4f4;
+    color: hsl(276, 55%, 52%);
+    max-width: 65%; 
+    padding: .9em;
+    border-radius: 13px 13px 13px 5px;
+}
+
+.walk-sam-chat {
+    font-size: .5rem;
+    margin-bottom: 1em;
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    color: white;
+    max-width: 75%; 
+    padding: .95em;
+    border-radius: 10px 10px 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.walk-sam-chat .wrapper {
+    transform: translateY(1px);
+}
+
+.walk-sam-chat-2 {
+    font-size: .5rem;
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    color: white;
+    max-width: 75%; 
+    padding: .95em;
+    border-radius: 10px 10px 10px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.walk-sam-chat-2 .wrapper {
+    transform: translateY(1px);
+}
+
+input[name=distance] {
+    vertical-align: middle;
+    margin-right: .5em;
+    appearance: none;
+    background-color: transparent;
+     width: 1.5em;
+     height: 1.5em;
+     border: .25px solid rgba(255,255,255,.8);
+     border-radius: 50%;
+    transform: translateY(-.55px);
+}
+
+label {
+    vertical-align: middle;
+    margin-left: .5em;
+}
+
+.price h1 {
+    font-size: .75rem;
+    font-weight: 700;
+    margin-right: .5em;
+}
+
+.message-bar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 2.25em;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 0em;
+    
+}
+
+.type-bar {
+    width: 100%;
+    margin-left: 1em;
+    margin-top: .21em;
+}
+
+input[type=text] {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    font-size: .5rem;
+    height: calc(100% - 10px);
+    opacity: .5;
+
+}
+
+input[type=text]:focus {
+    outline:none;
+}
+
+.submit-btn {
+    display: flex;
+    align-items: center;
+    width: 34px;
+    height: 26.8px;
+    border-radius: 50%;
+    margin-right: .25em;
+    transform: translateY(5px);
+    cursor: pointer
+}
+
+.submit-btn:hover {
+    opacity: .75;
+}
+
+input[type=submit] {
+    border-radius: 50%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color:hsl(271, 36%, 24%);
+    margin-inline: auto;
+    margin-bottom: .1em;
+    cursor: pointer;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+/*<---TEXT SECTION--->*/
+.text-content {
+    text-align: center;
+    max-width: 30em;
+    margin-inline: auto;
+}
+
+.text h1 {
+    margin: 1.5em auto .5em auto;
+    font-size: 2.49rem;
+    font-weight: 500;
+    color: hsl(271, 36%, 24%);
+}
+
+.text p {
+    font-size: 1rem;
+    color: hsl(270, 7%, 64%);
+    line-height: 1.8em;
+}
+
+
+
+/*<---MEDIA QUERY--->*/
+
+@media (min-width:1100px) {
+
+    body {
+        overflow: hidden;
+    }
+    
+    .background-paint {
+        transform: unset;
+        transform: translateX(-20%);
+        height: 50em;
+        width: 40em;
+        min-width: 40em;
+    }
+    
+    main {
+        display: grid;
+        grid-template-areas: "left right";
+        place-content: center;
+        margin: 0;
+        height: 100vh;
+    }
+    
+
+    .text {
+        max-width: 25em;
+        margin-left: 8em;
+        display: flex;
+        align-items: center;
+    }
+
+    .text-content {
+        text-align: unset;
+    }
+}
